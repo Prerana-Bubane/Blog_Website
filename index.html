@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MyBlog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">MyBlog</div>
+
+<div class="controls">
+
+<input type="text" id="search" placeholder="🔍 Search articles">
+
+<select id="categoryFilter">
+<option value="all">All</option>
+<option value="Tech">Tech</option>
+<option value="Travel">Travel</option>
+<option value="Lifestyle">Lifestyle</option>
+<option value="Food">Food</option>
+</select>
+
+</div>
+
+</header>
+
+
+<section class="hero">
+
+<h1>Good Morning ☀️</h1>
+<p>Welcome to my modern blog where ideas, stories and knowledge meet.</p>
+
+</section>
+
+
+<section id="posts" class="posts"></section>
+
+
+<button class="addBtn" onclick="toggleForm()">✍️ Write Blog</button>
+
+
+<div id="blogForm" class="form hidden">
+
+<h2>Create Blog</h2>
+
+<input type="text" id="title" placeholder="Blog Title">
+
+<input type="text" id="category" placeholder="Category">
+
+<textarea id="content" placeholder="Write your blog here..."></textarea>
+
+<button onclick="addPost()">Publish</button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
